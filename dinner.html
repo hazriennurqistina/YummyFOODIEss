@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Recipe Finder(Dinner)</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <style>
+            nav.navbar { /* More specific selector */
+                font-family: 'Comic Sans MS';
+                font-size: 16px;
+                font-weight: bold;
+                color: #000000;
+                background-color: black;
+            }
+
+            body {
+                font-family: 'Comic Sans MS';
+                font-weight: bold;
+                color: #000000;
+                background-color: cornsilk;
+            }
+
+            .dropdown-menu {
+                display: none; /* Hide initially */
+                position: absolute;
+                background-color: white;
+                border: 1px solid black;
+                padding: 10px;
+                z-index: 1; /* Ensure it appears above other elements */
+            }
+
+            .dropdown-menu li a {
+                /* Same styles as main links */
+            }
+
+            /* Show dropdown menu on hover */
+            .dropdown:hover .dropdown-menu {
+                display: block;
+
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            img {
+                vertical-align: middle;
+                border-image: linear-gradient(to left,black)1;
+                box-shadow: 0 0 5px rba(0,0,0,0.15);
+                border: 4px solid black;
+            }
+            .featured-images .image-container img {
+                width: 400px; /* Adjust width as needed */
+                height: 300px; /* Adjust height as needed */
+            }
+            .featured-images {
+                display: flex;
+                justify-content: space-between; /* Distribute images evenly with space around them */
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .recipe-container {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                margin-top: 20px;
+
+            }
+           .recipe-content {
+                text-align: left;
+                padding: 15px;
+                width: 60%; /* Adjust the width as needed */
+
+            }
+            .direction-content {
+                text-align: left;
+                padding: 15px;
+                width: 80%; /* Adjust the width as needed */
+                border-image: linear-gradient(to left,black)1;
+                box-shadow: 0 0 5px rba(0,0,0,0.15);
+                border: 4px solid black;
+                background-color: orange;
+            }
+            img {
+                width: 80%;
+            }
+            footer {
+                text-align: center;
+                padding: 3px;
+                background-color: black;
+                color: white;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+
+        </style>
+    </head>
+
+    <body style="background-color:cornsilk;">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"> &#127822; Y U M M Y &nbsp; F O O D I E &#127822; </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li ><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#">RECIPE FINDER</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dessert.html">Dessert</a></li>
+                             <li class="active"><a href="dinner.html">Dinner</a></li>
+                            <li><a href="lunch.html">Lunch</a></li>
+                            <li><a href="Breakfast.html">Breakfast</a></li>
+                        </ul>
+                    </li>
+
+                   
+                    <li class="dropdown">
+                        <a href="PopularRecipe.html">POPULAR RECIPES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="5Stars.html">5 stars</a></li>
+                            <li><a href="Trending.html">Trending</a></li>
+                            <li ><a href="PopularRecipe.html">Recently added recipe</a></li>
+                            <li><a href="Editor.html">Editor's choice</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li><a href="RecipeSubmission.html">RECIPE SUBMISSION</a></li>
+                    <li><a href="AboutUs.html">ABOUT US</a></li>
+                    <li><a href="ContactUs.html">CONTACT</a></li>    
+                </ul>
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <h1 style="text-align:center">HELLO! WELCOME TO YUMMY FOODIE</h1>
+        <h2 style="text-align:center"> &#127833; DINNER RECIPE &#127833; </h2>
+
+        <div class="recipe-container">
+            <div class="recipe-content">
+            <h1><ins>Spicy Ramen</ins></h1>
+            <img src="ramen.jpg" alt="ramen" width="400" height="300">
+                <div class="direction-content">
+                <h3 style="text-align: justify; text-justify: inter-word;">Ingredient</h3>
+                <ol style="text-align: justify; text-justify: inter-word;">
+                    <li>1 (3 ounce) package ramen noodles, any flavor, with seasoning packet</li>                   
+                    <li>2 cups water </li>                   
+                    <li>2 tablespoons butter</li>                     
+                    <li>1/4 cup milk</li>                                    
+                </ol>
+                </div>
+                <div class="direction-content">
+                <h3 style="text-align: justify; text-justify: inter-word;">Directions</h3>
+                <ol style="text-align: justify; text-justify: inter-word;">
+                    <li>Bring water to boil in a small sauce pan.</li>
+                    <li>Add dried noodles and cook 3 minutes, or until noodles are tender. Stir occasionally.</li>
+                    <li>Drain away water. Return noodles to sauce pan. </li>
+                    <li>Add butter, milk and contents of seasoning packet. </li>
+                    <li>If your tastes desire, you may not use all of the seasoning packet. </li>
+                    <li>Heat on low heat and stir until butter is melted and noodles are coated with creamy sauce.</li>
+                    <li>Serve.</li>
+                </ol>
+            </div>
+                <h1 style='padding: 1em;'></h1>
+        </div>
+            
+             <div class="recipe-content">
+            <h1><ins>Cube Steaks</ins></h1>
+            <img src="Cubed-Steaks.jpg" alt="cubed steaks" width="400" height="300">
+                <div class="direction-content">
+                <h3 style="text-align: justify; text-justify: inter-word;">Ingredient</h3>
+                <ol style="text-align: justify; text-justify: inter-word;">
+                    <li>1/3 cup all-purpose flour</li>                   
+                    <li>6 beef cube steaks (4 ounces each)</li>                   
+                    <li>1 tablespoon canola oil</li>                     
+                    <li>1 large onion, sliced and separated into rings</li>
+                    <li>3 cups water, divided</li>
+                    <li>1 envelope brown gravy mix</li>
+                    <li>1 envelope mushroom gravy mix</li>
+                    <li>1 envelope onion gravy mix</li>
+                    <li>Hot mashed potatoes or cooked noodles</li>
+                    
+                </ol>
+                </div>
+                <div class="direction-content">
+                <h3 style="text-align: justify; text-justify: inter-word;">Directions</h3>
+                <ol style="text-align: justify; text-justify: inter-word;">
+                    <li>Place flour in shallow dish. Add steaks, 1 or 2 at a time, and turn to coat completely.</li>
+                    <li>In a skillet, cook steaks in oil until lightly browned on each side. Transfer to a 3-qt. slow cooker. 
+                        Add the onion and 2 cups water.</li>
+                    <li> Cover and cook on low for 8 hours or until meat is tender.</li>
+                    <li>In a bowl, whisk together gravy mixes with remaining water. Add to slow cooker; cook 30 minutes longer. 
+                        Serve over mashed potatoes or noodles.</li>
+                   <li>Serve.</li>
+                </ol>
+            </div>
+                <h1 style='padding: 1em;'></h1>
+        </div>
+            
+             <div class="recipe-content">
+            <h1><ins>Easy Alfredo</ins></h1>
+            <img src="Fettuccini.jpg" alt="ramen" width="400" height="300">
+                <div class="direction-content">
+                <h3 style="text-align: justify; text-justify: inter-word;">Ingredient</h3>
+                <ol style="text-align: justify; text-justify: inter-word;">
+                    <li>4 ounces uncooked fettuccine</li>                   
+                    <li>3 tablespoons butter</li>                   
+                    <li>1 garlic clove, minced</li>                     
+                    <li>1 cup heavy whipping cream</li>
+                    <li>1/4 cup plus 2 tablespoons grated 
+                        ParmigianoReggiano cheese, divided</li> 
+                    <li>1/4 cup grated Romano cheese</li> 
+                    <li>1/8 teaspoon salt</li> 
+                    <li>Dash ground black pepper</li> 
+                    <li>Dash ground nutmeg</li> 
+                    <li>Minced fresh parsley, optional</li> 
+                </ol>
+                </div>
+                <div class="direction-content">
+                <h3 style="text-align: justify; text-justify: inter-word;">Directions</h3>
+                <ol style="text-align: justify; text-justify: inter-word;">
+                    <li>Cook the fettuccine in seasoned pasta water according to the directions for al dente.</li>
+                    <li>In a large saute pan, melt the butter over medium heat. Add the minced garlic and cook until it’s fragrant, about 1 minute. 
+                        Then, slowly add the heavy cream, whisking constantly as you pour until all the cream is incorporated. 
+                        Bring the mixture up to a gentle simmer and let it cook for 3 to 4 minutes, until it begins to thicken.</li>
+                    <li>Remove the pan from the heat. Add a handful of the Parmesan and Romano cheese at a time, whisking to incorporate the first handful before adding the next.  </li>
+                    <li>When all the cheese is added, return the pan to the stovetop. Simmer the sauce gently over low heat for 3 to 4 minutes, until it’s thick enough to coat the back of a spoon.</li>
+                    <li>Season the sauce with salt, black pepper and nutmeg. Add the drained fettuccine to the pan and toss it with the sauce.</li>
+                    <li>Portion the pasta into individual bowls and top them with the remaining Parmesan cheese and parsley, if using.</li>
+                 
+                </ol>
+            </div>
+                <h1 style='padding: 1em;'></h1>
+        </div>
+        </div>
+        <footer>
+            <p>&copy; 2023 Yummy Foodie</p>
+            <p>Follow us: <a href="https://www.facebook.com/groups/5832220376892824/">Facebook</a> | <a href="https://www.instagram.com/the_yummy_foodie/">Instagram</a> |<a href="https://wa.me/60179162897">Whatsapps</a> | <a href="https://twitter.com/ingiroperilcibo">Twitter</a></p>
+        </footer>
+    </body>
+</html>

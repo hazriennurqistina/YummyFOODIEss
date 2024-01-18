@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Recipe Finder(lunch)</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <style>
+            nav.navbar { /* More specific selector */
+                font-family: 'Comic Sans MS';
+                font-size: 16px;
+                font-weight: bold;
+                color: #000000;
+                background-color: black;
+            }
+
+            body {
+                font-family: 'Comic Sans MS';
+                font-weight: bold;
+                color: #000000;
+                background-color: cornsilk;
+            }
+
+            .dropdown-menu {
+                display: none; /* Hide initially */
+                position: absolute;
+                background-color: white;
+                border: 1px solid black;
+                padding: 10px;
+                z-index: 1; /* Ensure it appears above other elements */
+            }
+
+            .dropdown-menu li a {
+                /* Same styles as main links */
+            }
+
+            /* Show dropdown menu on hover */
+            .dropdown:hover .dropdown-menu {
+                display: block;
+
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            img {
+                vertical-align: middle;
+                border-image: linear-gradient(to left,black)1;
+                box-shadow: 0 0 5px rba(0,0,0,0.15);
+                border: 4px solid black;
+            }
+            .featured-images .image-container img {
+                width: 400px; /* Adjust width as needed */
+                height: 300px; /* Adjust height as needed */
+            }
+            .featured-images {
+                display: flex;
+                justify-content: space-between; /* Distribute images evenly with space around them */
+            }
+            * {
+                box-sizing: border-box;
+            }
+           .recipe-container {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                margin-top: 20px;
+
+            }
+           .recipe-content {
+                text-align: left;
+                padding: 15px;
+                width: 60%; /* Adjust the width as needed */
+
+            }
+            .direction-content {
+                text-align: left;
+                padding: 15px;
+                width: 80%; /* Adjust the width as needed */
+                border-image: linear-gradient(to left,black)1;
+                box-shadow: 0 0 5px rba(0,0,0,0.15);
+                border: 4px solid black;
+                background-color: orange;
+            }
+            img {
+                width: 80%;
+            }
+            footer {
+                text-align: center;
+                padding: 3px;
+                background-color: black;
+                color: white;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+
+        </style>
+    </head>
+
+    <body style="background-color:cornsilk;">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"> &#127822; Y U M M Y &nbsp; F O O D I E &#127822; </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li ><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#">RECIPE FINDER</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dessert.html">Dessert</a></li>
+                            <li><a href="dinner.html">Dinner</a></li>
+                             <li class="active"><a href="#">Lunch</a></li>
+                            <li><a href="Breakfast.html">Breakfast</a></li>
+                        </ul>
+                    </li>
+
+                   
+                    <li class="dropdown">
+                        <a href="PopularRecipe.html">POPULAR RECIPES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="5Stars.html">5 stars</a></li>
+                            <li><a href="Trending.html">Trending</a></li>
+                            <li ><a href="PopularRecipe.html">Recently added recipe</a></li>
+                            <li><a href="Editor.html">Editor's choice</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li><a href="RecipeSubmission.html">RECIPE SUBMISSION</a></li>
+                    <li><a href="AboutUs.html">ABOUT US</a></li>
+                    <li><a href="ContactUs.html">CONTACT</a></li>    
+                </ul>
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <h1 style="text-align:center">HELLO! WELCOME TO YUMMY FOODIE</h1>
+        <h2 style="text-align:center"> &#127833; LUNCH RECIPE &#127833; </h2>
+
+        <div class="recipe-container">
+            <div class="recipe-content">
+            <h1><ins>Curry Lamb</ins></h1>
+                <img src="currylamb.jpg" alt="currylamb" width="400" height="300">
+                <div class="direction-content">
+                <h3 style="text-align: justify; text-justify: inter-word;">Ingredient</h3>
+                <ol style="text-align: justify; text-justify: inter-word;">
+                    <li>3 garlic cloves, chopped</li>                   
+                    <li>1 tablespoon finely chopped fresh ginger </li>                   
+                    <li>2 tablespoons curry powder</li>                     
+                    <li>3 teaspoons salt</li>                 
+                    <li>2 tablespoons vinegar or 2 tablespoons lemon juice</li>                     
+                    <li>3 large ripe tomatoes</li>                       
+                    <li>2 fresh red chilies or 2 green chilies</li>                       
+                    <li>2 tablespoons chopped of fresh mint</li>                    
+                    <li>1 teaspoon garam masala</li>         
+                    <li>1 tablespoon chopped fresh coriander or 1 tablespoon mint</li>
+                </ol>
+                </div>
+                <div class="direction-content">
+                    <h3 style="text-align: justify; text-justify: inter-word;">Directions</h3>
+                    <ol style="text-align: justify; text-justify: inter-word;">
+                        <li>Heat the oil in a large saucepan, and gently fry the onion, garlic and ginger until soft and golden.</li>
+                        <li>Add the curry powder, salt and vinegar and stir thoroughly.</li>
+                        <li>Add the lamb and cook, stirring constantly until the lamb is coated with the spice mixture </li>
+                        <li>Add the tomatoes, chillies and mint. </li>
+                        <li>Cover and cook over a very low heat for 1 1/4 hours or until the lamb is tender, stirring occasionally. </li>
+                        <li>Add the garam masala and chopped coriander in the last 5 minutes of cooking. </li>
+                        <li>*note-the tomatoes should provide enough liquid for the meat to cook in, but if necessary,
+                            add a little hot water, (approximately 1/2 a cup) just enough to stop the meat sticking to the saucepan.</li>
+                    </ol>
+                   
+                </div>
+                 <h1 style='padding: 1em;'></h1>
+            </div>
+            
+               <div class="recipe-content">
+            <h1><ins>Chicken Salad</ins></h1>
+                <img src="chickensalad.jpg" alt="chickensalad" width="400" height="300">
+                <div class="direction-content">
+                <h3 style="text-align: justify; text-justify: inter-word;">Ingredient</h3>
+                <ol style="text-align: justify; text-justify: inter-word;">
+                    <li>1/2 cup mayonnaise</li>                   
+                    <li>2 tablespoons sour cream</li>                   
+                    <li>1 tablespoon lemon juice</li>                     
+                    <li>1/8 teaspoon salt</li>                 
+                    <li>1/8 teaspoon pepper</li>                     
+                    <li>4 cups shredded rotisserie chicken</li>                       
+                    <li>1-1/4 cups seedless red grapes, halved</li>                       
+                    <li>1/2 cup chopped pecans</li>                    
+                    <li>1/2 cup chopped celery</li>         
+                    <li>1/4 cup chopped sweet onion, optional</li>
+                </ol>
+                </div>
+                <div class="direction-content">
+                    <h3 style="text-align: justify; text-justify: inter-word;">Directions</h3>
+                    <ol style="text-align: justify; text-justify: inter-word;">
+                        <li>Start by mixing the first five ingredients together for a creamy sauce. 
+                            The sour cream and lemon juice add a tangy kick to this chunky chicken salad. </li>
+                        <li>Whisk together the mayonnaise, sour cream, lemon juice, salt and pepper until fully combined, tasting as you go, then set aside.</li>
+                        <li>In a large bowl, mix together the shredded chicken, halved red grapes, chopped pecans and chopped celery. If using onion, add it along with your mayonnaise sauce.</li>
+                        <li>Toss to coat.</li>
+                        <li>Once your chicken salad is combined, serve with fresh homemade bread, mixed greens salad or whole-grain crackers. </li>
+                        <li>Store leftovers in a sealed container in the refrigerator right away.</li>
+                        </ol>
+                   
+                </div>
+                 <h1 style='padding: 1em;'></h1>
+            </div>
+            
+               <div class="recipe-content">
+            <h1><ins>Tex-Mex Grain Bowls</ins></h1>
+                <img src="tex-mex-grain.jpg" alt="tex-mex-grain" width="400" height="300">
+                <div class="direction-content">
+                <h3 style="text-align: justify; text-justify: inter-word;">Ingredient</h3>
+                <ol style="text-align: justify; text-justify: inter-word;">
+                    <li>1 lb. carrots, peeled and cut into 1/2-inch pieces</li>                   
+                    <li>1 lb. parsnips, peeled and cut into 1/2-inch pieces</li>                   
+                    <li>4 tbsp. vegetable oil</li>                     
+                    <li>1 1/2 tsp. ground cumin</li>                 
+                    <li>1 tsp. chili powder</li>                     
+                    <li>1 1/4 tsp. kosher salt, plus more to taste</li>                       
+                    <li>4 c. thinly sliced red cabbage</li>                       
+                    <li>2 tablespoons chopped of fresh mint</li>                    
+                    <li>1 small onion, chopped</li>         
+                    <li>2 small avocados, sliced</li>
+                </ol>
+                </div>
+                <div class="direction-content">
+                    <h3 style="text-align: justify; text-justify: inter-word;">Directions</h3>
+                    <ol style="text-align: justify; text-justify: inter-word;">
+                        <li>Preheat the oven to 425˚. Toss the carrots, parsnips, 2 tablespoons vegetable oil, the cumin, chili powder,
+                            1 teaspoon salt and a few grinds of pepper on a rimmed baking sheet until well coated. Roast, stirring a few times, 
+                            until tender and lightly browned, 25 to 30 minutes.</li>
+                        <li>Meanwhile, add the cabbage to a medium bowl and squeeze 1 tablespoon lime juice over it. Add 1 tablespoon vegetable oil 
+                            and ¼ teaspoon each salt and pepper, toss and set aside to soften.</li>
+                        <li>Cook the quinoa as the label directs. Remove from the heat and fluff with a fork. Stir in the zest and juice of 1 lime and the cilantro.</li>
+                        <li>Heat the remaining 1 tablespoon vegetable oil in a medium skillet over medium-high heat. Add the onion and a pinch each of salt and pepper. 
+                            Cook, stirring, until softened, about 8 minutes.</li>
+                        <li>Stir in the pinto beans. Cook until warmed through, about 2 minutes.</li>
+                        <li>Divide the quinoa among bowls and top with the roasted veggies, bean mixture, cabbage and avocado. Top with salsa, pickled jalapeños, Cotija and more cilantro. 
+                            Serve with lime wedges.</li>
+                        </ol>
+                   
+                </div>
+                 <h1 style='padding: 1em;'></h1>
+            </div>
+        </div>
+            <footer>
+            <p>&copy; 2023 Yummy Foodie</p>
+            <p>Follow us: <a href="https://www.facebook.com/groups/5832220376892824/">Facebook</a> | <a href="https://www.instagram.com/the_yummy_foodie/">Instagram</a> |<a href="https://wa.me/60179162897">Whatsapps</a> | <a href="https://twitter.com/ingiroperilcibo">Twitter</a></p>
+        </footer>
+    </body>
+</html>
